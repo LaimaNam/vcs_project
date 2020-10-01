@@ -8,7 +8,7 @@
         if(!empty($vardas) && !empty($email) && !empty($message)) {
             if(filter_var($email, FILTER_VALIDATE_EMAIL)) {
                 $from = '$email';
-                $to = "limii_0120@yahoo.com";
+                $to = "some_mail@some_server.com";
                 $subject = "Nauja zinute";
                 $autorius = 'Nuo: ' . $vardas . ', ' . $email;
                 $zinute = htmlspecialchars($message);
