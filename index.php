@@ -17,16 +17,16 @@
   <body>
 
    <!-- Section: login form -->
-   <nav class=" login-form default-width split">
-      <div class="nav-login">
-        <form action="includes/login.inc.php" method="post">
-            <input type="text" name="uid" placeholder="Username" require/>
-            <input type="password" name="pwd" placeholder="Password" require />
-            <button type="submit" name="submit">Login</button>
-            <a href="signup.php" class="button">Sign up</a>
-        </form>
-      </div>
-    </nav>
+      <!-- <nav class=" login-form default-width split">
+        <div class="nav-login">
+          <form action="includes/login.inc.php" method="post">
+              <input type="text" name="uid" placeholder="Username" require/>
+              <input type="password" name="pwd" placeholder="Password" require />
+              <button type="submit" name="submit">Login</button>
+              <a href="signup.php" class="button">Sign up</a>
+          </form>
+        </div>
+      </nav> -->
 
     <!-- Section: page header -->
     <div class="page-header default-width">
@@ -63,8 +63,6 @@
         </div>
       </div>
     </div>
-
-    
 
     <!-- Section: hero  -->
     <div class="section hero">
