@@ -13,7 +13,6 @@
                 $autorius = 'Nuo: ' . $vardas . ', ' . $email;
                 $zinute = htmlspecialchars($message);
                 mail($to, $subject, $autorius, $zinute, $from);
-                echo "<script>alert('Dekojame. Jusu zinute gauta. Netrukus susisieksime.');</script>";
 
             }
         }
