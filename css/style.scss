@@ -61,7 +61,7 @@ h6 {
     font-family: "Roboto", sans-serif;
   }
   &.login-button {
-    padding: 2px 5px;
+    padding: 5px 8px;
     border: none;
     margin-left: 5px;
     margin-right: 5px;
@@ -93,9 +93,42 @@ h6 {
   margin-top: 15px;
   margin-bottom: 15px;
 
-  .nav-login {
-    display: flex;
-    background-color: none;
+  .loginform {
+    input[type="text"],
+    input[type="password"] {
+      padding: 10px;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+  }
+}
+//  Sign up form ------->
+.main-wrapper-signup {
+  h3,
+  p {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+  }
+  .signup-form {
+    padding-bottom: 150px;
+    max-width: 100%;
+    width: 500px;
+    margin: auto;
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+  }
+
+  button {
+    border: none;
   }
 }
 
@@ -345,13 +378,16 @@ h6 {
   }
 
   .form-box {
-    input,
+    input[type="text"],
+    input[type="email"],
     textarea {
-      border: 0.25px solid #bdbdbd;
-      border-radius: 4px;
-      max-width: 100%;
-      width: -webkit-fill-available;
+      width: 100%;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
     }
+
     input {
       height: 34px;
       margin-bottom: 20px;

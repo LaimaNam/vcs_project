@@ -69,7 +69,7 @@ h6 {
 }
 
 .button.login-button {
-  padding: 2px 5px;
+  padding: 5px 8px;
   border: none;
   margin-left: 5px;
   margin-right: 5px;
@@ -98,11 +98,39 @@ h6 {
   margin-bottom: 15px;
 }
 
-.main-wrapper .nav-login {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: none;
+.main-wrapper .loginform input[type="text"],
+.main-wrapper .loginform input[type="password"] {
+  padding: 10px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.main-wrapper-signup h3,
+.main-wrapper-signup p {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.main-wrapper-signup .signup-form {
+  padding-bottom: 150px;
+  max-width: 100%;
+  width: 500px;
+  margin: auto;
+}
+
+.main-wrapper-signup .signup-form input[type="text"],
+.main-wrapper-signup .signup-form input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.main-wrapper-signup button {
+  border: none;
 }
 
 .page-header {
@@ -366,12 +394,14 @@ h6 {
   text-align: center;
 }
 
-.form .form-box input,
+.form .form-box input[type="text"],
+.form .form-box input[type="email"],
 .form .form-box textarea {
-  border: 0.25px solid #bdbdbd;
-  border-radius: 4px;
-  max-width: 100%;
-  width: -webkit-fill-available;
+  width: 100%;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
 }
 
 .form .form-box input {
