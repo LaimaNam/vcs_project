@@ -15,24 +15,24 @@
 
    <!-- Section: login form -->
    <nav>
-        <div class="main-wrapper login-form default-width split">
+        <div class="main-wrapper default-width split">
                 <div class="nav-login">
                     <?php 
                         if(isset($_SESSION['u_id'])){
                     ?>
                             <form action="includes/logout.inc.php" method="post">
-                            <button type="submit" name="submit">Logout</button></form>
+                            <button type="submit" name="submit" class="button round-button login-button">Logout</button></form>
                     <?php
                         } else {
                     ?>
                             <form action="includes/login.inc.php" method="post">
                             <input type="text" name="uid" placeholder="Username" />
                             <input type="password" name="pwd" placeholder="Password" />
-                            <button type="submit" name="submit">Login</button>
+                            <button type="submit" name="submit" class="button round-button login-button">Login</button>
             
 
                         </form>
-                        <a href="signup.php">Sign up</a>
+                        <a href="signup.php" class="button round-button login-button">Sign up</a>
                     <?php
                         }
                     ?>

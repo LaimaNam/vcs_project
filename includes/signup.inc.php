@@ -24,6 +24,7 @@
                 
                 if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
                     header("Location: ../signup.php?signup=invalidemail");
+                    echo ('Invalid e-mail');
                     exit();
                 } else {
                     
@@ -32,6 +33,7 @@
                     $result_check = mysqli_num_rows($result);
                     if($result_check > 0) {
                         header ("Location: ../signup.php?signup=usertaken");
+                        echo ('User taken!');
                         exit();
                     } else {
                         

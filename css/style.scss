@@ -46,6 +46,7 @@ h6 {
   text-align: center;
   opacity: 1;
   transition: 0.3s;
+  cursor: pointer;
 
   &:hover {
     opacity: 0.6;
@@ -58,6 +59,12 @@ h6 {
     font-size: 15px;
     border-radius: 8px;
     font-family: "Roboto", sans-serif;
+  }
+  &.login-button {
+    padding: 2px 5px;
+    border: none;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 
@@ -82,16 +89,13 @@ h6 {
 
 // Section: Login form ---------------->
 
-.nav-login {
-  display: flex;
-  background-color: none;
+.main-wrapper {
+  margin-top: 15px;
+  margin-bottom: 15px;
 
-  button {
-    border: none;
-  }
-  a,
-  button {
-    padding: 5px 5px !important;
+  .nav-login {
+    display: flex;
+    background-color: none;
   }
 }
 

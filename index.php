@@ -1,9 +1,7 @@
-<?php include_once 'header.php' ?>
-
- <?php
-    // var_dump($_POST);
-    require __DIR__ . '/app.php';
-?>
+<?php 
+  include_once 'header.php';
+  require __DIR__ . '/app.php';
+ ?>
 
 <section class="main-container">
     <div class="main-wrapper">       
