@@ -85,11 +85,20 @@ h6 {
   font-size: 14px;
 }
 
-.login-form {
+.nav-login {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: none;
+}
+
+.nav-login button {
+  border: none;
+}
+
+.nav-login a,
+.nav-login button {
+  padding: 5px 5px !important;
 }
 
 .page-header {

@@ -80,10 +80,19 @@ h6 {
 }
 // ------------------------------------------------------------------
 
-// Section: Login form
-.login-form {
+// Section: Login form ---------------->
+
+.nav-login {
   display: flex;
   background-color: none;
+
+  button {
+    border: none;
+  }
+  a,
+  button {
+    padding: 5px 5px !important;
+  }
 }
 
 //Section: Page header

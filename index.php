@@ -1,68 +1,21 @@
+<?php include_once 'header.php' ?>
+
  <?php
     // var_dump($_POST);
     require __DIR__ . '/app.php';
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="PHP forma">
-    <script src="script.js" defer></script>
-    <title>Healthy lifestyle</title>
-    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" /> -->
-    <link rel="stylesheet" href="css/style.css?<?php echo date('l jS \of F Y h:i:s A'); ?>" />
-  </head>
-  <body>
-
-   <!-- Section: login form -->
-      <!-- <nav class=" login-form default-width split">
-        <div class="nav-login">
-          <form action="includes/login.inc.php" method="post">
-              <input type="text" name="uid" placeholder="Username" require/>
-              <input type="password" name="pwd" placeholder="Password" require />
-              <button type="submit" name="submit">Login</button>
-              <a href="signup.php" class="button">Sign up</a>
-          </form>
-        </div>
-      </nav> -->
-
-    <!-- Section: page header -->
-    <div class="page-header default-width">
-      <div class="navigation split">
-        <!-- Logo -->
-        <div class="logo">
-          <a href=""> <img src="assets/logo.png" alt="logo" /> </a>
-        </div>
-
-        <a href="#" class="toggle-button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </a>
-        <!-- Menu -->
-        <div class="menu split">
-          <div class="menu-single">
-            <a href="#">Home</a>
-          </div>
-          <div class="menu-single">
-            <a href="#">About</a>
-          </div>
-          <div class="menu-single">
-            <a href="#">Blog</a>
-          </div>
-          <div class="menu-single">
-            <a href="#">Contact</a>
-          </div>
-          <div class="menu-single">
-            <button class="button menu-button">Get webify today</button>
-          </div>
-    
-        </div>
-      </div>
+<section class="main-container">
+    <div class="main-wrapper">       
+        <?php
+            if(isset($_SESSION['u_id'])) {
+                echo "<p>Hi, there! You are logged in!</p>";
+            }
+        ?>
     </div>
+</section>
+
+
 
     <!-- Section: hero  -->
     <div class="section hero">
@@ -326,58 +279,7 @@
       </div>
     </div>
 
-    <!-- Section Info-->
-    <div class="section info">
-      <div class="info-container default-width split">
-        <div class="single-element resources">
-          <h6>Resources</h6>
-
-          <a href="#">About Us</a>
-          <a href="#">Contact</a>
-          <a href="#">Terms & Conditions</a>
-        </div>
-
-        <div class="single-element social">
-          <h6>Social Media</h6>
-          <div class="media-links">
-            <div class="single-media">
-              <div class="media-img">
-                <img src="assets/social-1.png" alt="" />
-              </div>
-              <div class="media-link"><a href="#">Facebook</a></div>
-            </div>
-            <div class="single-media">
-              <div class="media-img">
-                <img src="assets/social-2.png" alt="" />
-              </div>
-              <div class="media-link"><a href="#">Twitter</a></div>
-            </div>
-            <div class="single-media">
-              <div class="media-img">
-                <img src="assets/social-3.png" alt="" />
-              </div>
-              <div class="media-link"><a href="#">Instagram</a></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="single-element address">
-          <h6>Address</h6>
-          <p>
-            497 Evergreen Rd. Roseville, CA 95673 +44 345 678 903
-            adobexd@mail.com
-          </p>
-        </div>
-
-        <div class="single-element"></div>
-
-      </div>
-      <div class="all-rights">
-        <span>
-          &copy;
-          <?php echo date('Y'); ?> Built with pride and caffeine. All rights reserved.</span>
-      </div>
-    </div>
+   
 
     <!-- Swiper Javascript -->
     <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
@@ -408,5 +310,4 @@
       }
     </script> -->
    
-  </body>
-</html>
+ <?php include_once 'footer.php'?>
