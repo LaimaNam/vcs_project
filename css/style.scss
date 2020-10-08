@@ -115,11 +115,6 @@ h6 {
     text-align: center;
   }
   .signup-form {
-    // padding-bottom: 150px;
-    // max-width: 100%;
-    // width: 500px;
-    // margin: auto;
-
     input[type="text"],
     input[type="password"] {
       width: 100%;
@@ -392,6 +387,8 @@ h6 {
       display: inline-block;
       border: none;
       background: #f1f1f1;
+      box-sizing: border-box;
+      resize: vertical;
     }
 
     input {

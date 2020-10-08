@@ -6,8 +6,10 @@
 <section class="main-container">
     <div class="main-wrapper">       
         <?php
-            if(isset($_SESSION['u_id'])) {
-                echo "<p>Hi, there! You are logged in!</p>";
+            if(isset($_SESSION['u_id'])) { 
+                 ?> 
+                <p class="default-width" style="font-family: PT Sans, sans-serif; display: flex; font-weight: 600">Hi there! You are logged in!</p>
+                <?php
             }
         ?>
     </div>
