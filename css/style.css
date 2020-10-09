@@ -92,6 +92,27 @@ h6 {
   font-size: 14px;
 }
 
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  color: #34c759;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 50px;
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#myBtn:hover {
+  opacity: 0.6;
+}
+
 .main-wrapper {
   margin-top: 15px;
   margin-bottom: 15px;

@@ -87,6 +87,25 @@ h6 {
 }
 // ------------------------------------------------------------------
 
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 99; /* Make sure it does not overlap */
+  border: none;
+  color: #34c759;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 50px;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+#myBtn:hover {
+  opacity: 0.6;
+}
+
 // Section: Login form ---------------->
 
 .main-wrapper {

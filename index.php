@@ -15,7 +15,8 @@
     </div>
 </section>
 
-
+<!-- Scroll to top button -->
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-circle-up"></i></button>
 
     <!-- Section: hero  -->
     <div class="section hero">
