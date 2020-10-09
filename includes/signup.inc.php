@@ -9,6 +9,7 @@
         $email = mysqli_real_escape_string($conn, $_POST['email']);
         $uid = mysqli_real_escape_string($conn, $_POST['uid']);
         $pwd = mysqli_real_escape_string($conn, $_POST['pwd']);
+        $pwdConfirm = mysqli_real_escape_string($conn, $_POST['pwdConfirm']);
         
 
        
@@ -36,6 +37,12 @@
                         echo ('User taken!');
                         exit();
                     } else {
+
+                        if($_POST['pwd']!==$_POST['pwdConfirm']) {
+                            header ("Location: ../signup.php?signup=passwordDidNotMatch");
+                            echo "Your passwords did not match";
+                            exit();
+                        } 
                         
                         $hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
                         
